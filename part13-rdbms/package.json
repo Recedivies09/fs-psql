@@ -1,0 +1,32 @@
+{
+  "name": "part13-rdbms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon cli.js",
+    "migration:down": "node utils/rollback.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Recedivies/part13-rdbms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Recedivies/part13-rdbms/issues"
+  },
+  "homepage": "https://github.com/Recedivies/part13-rdbms#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.0",
+    "umzug": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

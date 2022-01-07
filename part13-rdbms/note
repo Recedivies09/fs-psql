@@ -1,0 +1,8 @@
+# to use psql (interactive terminal):
+heroku run psql -h <ec2. . . .com> -p 5432 -U <username> <dbname>
+# use command 'heroku config -a <app_name>' to see what is the string
+heroku run psql -h ec2-3-213-146-52.compute-1.amazonaws.com -p 5432 -U dbtbbgfuincqsw d5usqub1it6v8c
+-a <app_name>
+
+postgres://dbtbbgfuincqsw:4e2ce1a6f89d2e42e11c50d2d3b399d91ef4e963ee3f5ed54b7fd71b9b272312@ec2-3-213-146-52.compute-1.amazonaws.com:5432/d5usqub1it6v8c
+4e2ce1a6f89d2e42e11c50d2d3b399d91ef4e963ee3f5ed54b7fd71b9b272312

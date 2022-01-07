@@ -1,0 +1,32 @@
+GET http://localhost:3002/api/users
+
+###
+GET http://localhost:3002/api/users/2
+
+###
+PUT http://localhost:3002/api/users/recedivies@foo.com
+Content-Type: application/json
+
+{
+  "username": "recedivies2@gmail.com"
+}
+
+###
+POST http://localhost:3002/api/users
+Content-Type: application/json
+
+{
+  "username": "recedivies@foo.com",
+  "password": "secret",
+  "name": "Ahmadhi"
+}
+###
+POST http://localhost:3002/api/users
+Content-Type: application/json
+
+{
+  "username": "mluukkai@iki.fi",
+  "password": "secret",
+  "name": "Matti Luukkainen"
+}
+

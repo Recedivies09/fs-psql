@@ -1,0 +1,32 @@
+GET http://localhost:3002/api/blogs
+###
+GET http://localhost:3002/api/authors
+###
+
+POST http://localhost:3002/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJlY2VkaXZpZXNAZm9vLmNvbSIsImlkIjoxLCJpYXQiOjE2Mzk5MjIxODR9.sVmmkvf7sWREutn1uUCUDDRYN1R4U50mAL-uapubXuo
+
+{
+  "author": "Recedivies",
+  "url": "https://github.com/Recedivies/",
+  "title": "Coding Exercise",
+  "likes": 100
+}
+
+###
+POST http://localhost:3002/api/blogs
+Content-Type: application/json
+
+{
+  "author": "Recedivies",
+  "url": "https://github.com/Recedivies/",
+  "likes": 100
+}
+
+###
+DELETE http://localhost:3002/api/blogs/22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJlY2VkaXZpZXMyQGdtYWlsLmNvbSIsImlkIjozLCJpYXQiOjE2Mzk3OTE4MDJ9.1Ar-kJxaZ6_RZWaPVYbQFN7Y7NWTBwXNu1buO_cxR-I
+
+###
+PUT http://localhost:3002/api/blogs/12
